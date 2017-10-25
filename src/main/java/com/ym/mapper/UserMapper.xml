@@ -12,7 +12,8 @@
         <result column="status" property="status"/>
     </resultMap>
     <select id="userLogin" parameterType="com.ym.pojo.User" resultType="Integer" >
-        select count(*) from  user where account=#{account} and pswd=#{pswd}
+        select count(*) from  user where account=#{account} and pswd=#{pswd};
+        update user set last_login_time=now() where id=#{id};
     </select>
 
     <select id="findUserByAccount" parameterType="String" resultMap="userMap" >
