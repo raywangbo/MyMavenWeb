@@ -1,5 +1,6 @@
 package com.ym.pojo;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -11,8 +12,8 @@ public class User {
     private String name;            //用户名称
     private String pswd;            //用户密码
     private String role;            //用户角色
-    private Date createTime; //用户创造时间
-    private Date lastlLoginTime;   //用户最后登录时间
+    private Timestamp createTime; //用户创造时间
+    private Timestamp lastLoginTime;   //用户最后登录时间
     private Long status;            //用户状态
 
     public Long getId() {
@@ -55,20 +56,20 @@ public class User {
         this.role = role;
     }
 
-    public Date getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public Date getLastlLoginTime() {
-        return lastlLoginTime;
+    public Timestamp getLastLoginTime() {
+        return lastLoginTime;
     }
 
-    public void setLastlLoginTime(Date lastlLoginTime) {
-        this.lastlLoginTime = lastlLoginTime;
+    public void setLastLoginTime(Timestamp lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
     }
 
     public Long getStatus() {
@@ -88,7 +89,7 @@ public class User {
                 ", pswd='" + pswd + '\'' +
                 ", role='" + role + '\'' +
                 ", createTime=" + createTime +
-                ", lastlLoginTime=" + lastlLoginTime +
+                ", lastLoginTime=" + lastLoginTime +
                 ", status=" + status +
                 '}';
     }

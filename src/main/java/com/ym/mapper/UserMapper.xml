@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ym.mapper.UserMapper" >
-
+    <resultMap id="userMap" type="com.ym.pojo.User">
+        <id column="id" property="id"/>
+        <result column="account" property="account"/>
+        <result column="name" property="name"/>
+        <result column="pswd" property="pswd"/>
+        <result column="role" property="role"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_login_time" property="lastLoginTime"/>
+        <result column="status" property="status"/>
+    </resultMap>
     <select id="userLogin" parameterType="com.ym.pojo.User" resultType="Integer" >
         select count(*) from  user where account=#{account} and pswd=#{pswd}
     </select>
 
-    <select id="findUserByAccount" parameterType="String" resultType="com.ym.pojo.User" >
+    <select id="findUserByAccount" parameterType="String" resultMap="userMap" >
         select * from  user where account=#{account}
     </select>
 </mapper>

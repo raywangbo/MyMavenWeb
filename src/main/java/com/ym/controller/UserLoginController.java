@@ -29,8 +29,7 @@ public class UserLoginController {
             user = userService.findUserByAccount(account);
             user.setPswd(pswd);
             if (userService.userLogin(user) == 1) {
-//                modelAndView.setViewName("index");
-                System.out.println(user.getLast_login_time());
+//                modelAndView.setViewName("index")
                 return user.toString();
             } else {
 //                modelAndView.setViewName("login");
