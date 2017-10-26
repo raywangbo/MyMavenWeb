@@ -3,11 +3,15 @@ package com.ym.controller;
 
 import com.ym.pojo.User;
 import com.ym.service.UserService;
+import com.ym.utils.MD5Util;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * Created by Ray on 2017/10/23.
@@ -27,21 +31,16 @@ public class UserLoginController {
      * @return
      */
     @RequestMapping(value = "/userLogin")
-    public String userLogin(String account , String pswd) {
+    public void userLogin(HttpServletResponse response, HttpServletRequest request, String account , String pswd) throws Exception {
         if (account != null) {
             User user;
-//            ModelAndView modelAndView = new ModelAndView();
             user = userService.findUserByAccount(account);
             user.setPswd(pswd);
             if (userService.userLogin(user) == 1) {
-//                modelAndView.setViewName("index")
-                return "index";
-            } else {
-//                modelAndView.setViewName("login");
-                return "-1";
+                response.sendRedirect("/index.html");
+                //request.getRequestDispatcher("login/index.html").forward(request,response);
             }
         }
-        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class UserLoginController {
             user.setFullName(fullName);
             user.setName(userName);
             user.setAccount(userAccount);
-            user.setPswd(pswd);
+            user.setPswd(MD5Util.generate(pswd));
             user.setStatus("1");
            return "index";
         }
