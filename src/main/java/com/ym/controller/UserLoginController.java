@@ -35,8 +35,7 @@ public class UserLoginController {
         if (account != null) {
             User user;
             user = userService.findUserByAccount(account);
-            user.setPswd(pswd);
-            if (userService.userLogin(user) == 1) {
+            if (MD5Util.verify(pswd,user.getPswd())) {
                 response.sendRedirect("/index.html");
                 //request.getRequestDispatcher("login/index.html").forward(request,response);
             }
@@ -56,6 +55,7 @@ public class UserLoginController {
             user.setAccount(userAccount);
             user.setPswd(MD5Util.generate(pswd));
             user.setStatus("1");
+            userService.insertUser(user);
            return "index";
         }
         return "-1";
