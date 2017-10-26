@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="xiaonian.war">
       <element id="artifact" artifact-name="MyMavenWeb:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="main" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="main/web/Web" />
     </root>
   </artifact>
 </component>

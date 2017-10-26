@@ -9,4 +9,6 @@ public interface UserMapper {
     Integer userLogin(User user);//通过用户信息查找用户
 
     User findUserByAccount(String account);//通过账户查找用户
+
+    String insertUser(User user);//插入用户信息
 }

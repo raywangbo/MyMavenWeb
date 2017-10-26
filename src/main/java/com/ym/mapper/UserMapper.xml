@@ -5,6 +5,7 @@
         <id column="id" property="id"/>
         <result column="account" property="account"/>
         <result column="name" property="name"/>
+        <result column="full_name" property="fullName"/>
         <result column="pswd" property="pswd"/>
         <result column="role" property="role"/>
         <result column="create_time" property="createTime"/>
@@ -19,4 +20,11 @@
     <select id="findUserByAccount" parameterType="String" resultMap="userMap" >
         select * from  user where account=#{account}
     </select>
+
+    <insert id="insertUser" parameterType="com.ym.pojo.User">
+        <selectKey keyProperty="id" order="AFTER" resultType="bigint">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user values(null,#{account},#{name},#{pswd},#{role},now(),null,#{status},#{fullName})
+    </insert>
 </mapper>

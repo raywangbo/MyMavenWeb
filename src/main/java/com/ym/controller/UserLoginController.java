@@ -21,6 +21,12 @@ public class UserLoginController {
     @Resource
     UserService userService;
 
+    /**
+     * 处理用户登录请求
+     * @param account 账户
+     * @param pswd  密码
+     * @return
+     */
     @RequestMapping(value = "/userLogin")
     public String userLogin(String account , String pswd) {
         if (account != null) {
@@ -37,5 +43,24 @@ public class UserLoginController {
             }
         }
         return null;
+    }
+
+    /**
+     * 处理用户注册请求
+     * @return
+     */
+    @RequestMapping(value = "/userRegister")
+    public String userRegister(String fullName, String userName, String userAccount, String pswd){
+        if(userAccount != null && pswd != null){
+            User user = new User();
+            user.setFullName(fullName);
+            user.setName(userName);
+            user.setAccount(userAccount);
+            user.setPswd(pswd);
+            user.setStatus(1l);
+
+           return userService.insertUser(user);
+        }
+        return "";
     }
 }

@@ -10,11 +10,20 @@ public class User {
     private Long id;                //用户id
     private String account;         //用户账号
     private String name;            //用户名称
+    private String fullName;        //用户全名
     private String pswd;            //用户密码
     private String role;            //用户角色
     private Timestamp createTime; //用户创造时间
     private Timestamp lastLoginTime;   //用户最后登录时间
     private Long status;            //用户状态
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 
     public Long getId() {
         return id;
@@ -86,6 +95,7 @@ public class User {
                 "id=" + id +
                 ", account='" + account + '\'' +
                 ", name='" + name + '\'' +
+                ", fullName='" + fullName + '\'' +
                 ", pswd='" + pswd + '\'' +
                 ", role='" + role + '\'' +
                 ", createTime=" + createTime +
