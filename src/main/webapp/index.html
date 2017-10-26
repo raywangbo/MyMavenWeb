@@ -7,37 +7,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="stylesheet" type="text/css" href="css/cloud-admin.css" >
-	<link rel="stylesheet" type="text/css"  href="css/themes/default.css" id="skin-switcher" >
-	<link rel="stylesheet" type="text/css"  href="css/responsive.css" >
-	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="./css/themes/default.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="./css/responsive.css" >
+	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="./js/flot/excanvas.min.js"></script><script src="./http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="./http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- ANIMATE -->
-	<link rel="stylesheet" type="text/css" href="css/animatecss/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/animatecss/animate.min.css" />
 	<!-- DATE RANGE PICKER -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="./js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 	<!-- TODO -->
-	<link rel="stylesheet" type="text/css" href="js/jquery-todo/css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="./js/jquery-todo/css/styles.css" />
 	<!-- FULL CALENDAR -->
-	<link rel="stylesheet" type="text/css" href="js/fullcalendar/fullcalendar.min.css" />
+	<link rel="stylesheet" type="text/css" href="./js/fullcalendar/fullcalendar.min.css" />
 	<!-- GRITTER -->
-	<link rel="stylesheet" type="text/css" href="js/gritter/css/jquery.gritter.css" />
+	<link rel="stylesheet" type="text/css" href="./js/gritter/css/jquery.gritter.css" />
 	<!-- FONTS -->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<form action="index.html">
 	<!-- HEADER -->
 	<header class="navbar clearfix" id="header">
 		<div class="container">
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
-					<a href="index.html">
-						<img src="img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+					<a href="./index.html">
+						<img src="./img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
 					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
 					<div class="visible-xs">
-						<a href="#" class="team-status-toggle switcher btn dropdown-toggle">
+						<a href="./#" class="team-status-toggle switcher btn dropdown-toggle">
 							<i class="fa fa-users"></i>
 						</a>
 					</div>
@@ -53,14 +54,14 @@
 				<!-- NAVBAR LEFT -->
 				<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
 					<li class="dropdown">
-						<a href="#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Toggle Team View">
+						<a href="./#" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Toggle Team View">
 							<i class="fa fa-users"></i>
 							<span class="name">Team Status</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="./#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-cog"></i>
 							<span class="name">Skins</span>
 							<i class="fa fa-angle-down"></i>
@@ -69,12 +70,12 @@
 							<li class="dropdown-title">
 								<span><i class="fa fa-leaf"></i> Theme Skins</span>
 							</li>
-							<li><a href="#" data-skin="default">Subtle (default)</a></li>
-							<li><a href="#" data-skin="night">Night</a></li>
-							<li><a href="#" data-skin="earth">Earth</a></li>
-							<li><a href="#" data-skin="utopia">Utopia</a></li>
-							<li><a href="#" data-skin="nature">Nature</a></li>
-							<li><a href="#" data-skin="graphite">Graphite</a></li>
+							<li><a href="./#" data-skin="default">Subtle (default)</a></li>
+							<li><a href="./#" data-skin="night">Night</a></li>
+							<li><a href="./#" data-skin="earth">Earth</a></li>
+							<li><a href="./#" data-skin="utopia">Utopia</a></li>
+							<li><a href="./#" data-skin="nature">Nature</a></li>
+							<li><a href="./#" data-skin="graphite">Graphite</a></li>
 						 </ul>
 					</li>
 				</ul>
@@ -83,7 +84,7 @@
 				<ul class="nav navbar-nav pull-right">
 					<!-- BEGIN NOTIFICATION DROPDOWN -->	
 					<li class="dropdown" id="header-notification">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="./#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-bell"></i>
 							<span class="badge">7</span>						
 						</a>
@@ -92,7 +93,7 @@
 								<span><i class="fa fa-bell"></i> 7 Notifications</span>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-success"><i class="fa fa-user"></i></span>
 									<span class="body">
 										<span class="message">5 users online. </span>
@@ -104,7 +105,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-primary"><i class="fa fa-comment"></i></span>
 									<span class="body">
 										<span class="message">Martin commented.</span>
@@ -116,7 +117,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-warning"><i class="fa fa-lock"></i></span>
 									<span class="body">
 										<span class="message">DW1 server locked.</span>
@@ -128,7 +129,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-info"><i class="fa fa-twitter"></i></span>
 									<span class="body">
 										<span class="message">Twitter connected.</span>
@@ -140,7 +141,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-danger"><i class="fa fa-heart"></i></span>
 									<span class="body">
 										<span class="message">Jane liked. </span>
@@ -152,7 +153,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="label label-warning"><i class="fa fa-exclamation-triangle"></i></span>
 									<span class="body">
 										<span class="message">Database overload.</span>
@@ -164,14 +165,14 @@
 								</a>
 							</li>
 							<li class="footer">
-								<a href="#">See all notifications <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="./#">See all notifications <i class="fa fa-arrow-circle-right"></i></a>
 							</li>
 						</ul>
 					</li>
 					<!-- END NOTIFICATION DROPDOWN -->
 					<!-- BEGIN INBOX DROPDOWN -->
 					<li class="dropdown" id="header-message">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="./#" class="dropdown-toggle" data-toggle="dropdown">
 						<i class="fa fa-envelope"></i>
 						<span class="badge">3</span>
 						</a>
@@ -181,8 +182,8 @@
 								<span class="compose pull-right tip-right" title="Compose message"><i class="fa fa-pencil-square-o"></i></span>
 							</li>
 							<li>
-								<a href="#">
-									<img src="img/avatars/avatar2.jpg" alt="" />
+								<a href="./#">
+									<img src="./img/avatars/avatar2.jpg" alt="" />
 									<span class="body">
 										<span class="from">Jane Doe</span>
 										<span class="message">
@@ -197,8 +198,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="img/avatars/avatar1.jpg" alt="" />
+								<a href="./#">
+									<img src="./img/avatars/avatar1.jpg" alt="" />
 									<span class="body">
 										<span class="from">Vince Pelt</span>
 										<span class="message">
@@ -213,8 +214,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="img/avatars/avatar8.jpg" alt="" />
+								<a href="./#">
+									<img src="./img/avatars/avatar8.jpg" alt="" />
 									<span class="body">
 										<span class="from">Debby Doe</span>
 										<span class="message">
@@ -229,14 +230,14 @@
 								</a>
 							</li>
 							<li class="footer">
-								<a href="#">See all messages <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="./#">See all messages <i class="fa fa-arrow-circle-right"></i></a>
 							</li>
 						</ul>
 					</li>
 					<!-- END INBOX DROPDOWN -->
 					<!-- BEGIN TODO DROPDOWN -->
 					<li class="dropdown" id="header-tasks">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="./#" class="dropdown-toggle" data-toggle="dropdown">
 						<i class="fa fa-tasks"></i>
 						<span class="badge">3</span>
 						</a>
@@ -245,7 +246,7 @@
 								<span><i class="fa fa-check"></i> 6 tasks in progress</span>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="header clearfix">
 										<span class="pull-left">Software Update</span>
 										<span class="pull-right">60%</span>
@@ -258,7 +259,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="header clearfix">
 										<span class="pull-left">Software Update</span>
 										<span class="pull-right">25%</span>
@@ -271,7 +272,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="header clearfix">
 										<span class="pull-left">Software Update</span>
 										<span class="pull-right">40%</span>
@@ -284,7 +285,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="header clearfix">
 										<span class="pull-left">Software Update</span>
 										<span class="pull-right">70%</span>
@@ -297,7 +298,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="./#">
 									<span class="header clearfix">
 										<span class="pull-left">Software Update</span>
 										<span class="pull-right">65%</span>
@@ -316,23 +317,23 @@
 								</a>
 							</li>
 							<li class="footer">
-								<a href="#">See all tasks <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="./#">See all tasks <i class="fa fa-arrow-circle-right"></i></a>
 							</li>
 						</ul>
 					</li>
 					<!-- END TODO DROPDOWN -->
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<li class="dropdown user" id="header-user">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img alt="" src="img/avatars/avatar3.jpg" />
+						<a href="./#" class="dropdown-toggle" data-toggle="dropdown">
+							<img alt="" src="./img/avatars/avatar3.jpg" />
 							<span class="username">admin</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
-							<li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
-							<li><a href="#"><i class="fa fa-eye"></i> Privacy Settings</a></li>
-							<li><a href="login.html"><i class="fa fa-power-off"></i> Log Out</a></li>
+							<li><a href="./#"><i class="fa fa-user"></i> My Profile</a></li>
+							<li><a href="./#"><i class="fa fa-cog"></i> Account Settings</a></li>
+							<li><a href="./#"><i class="fa fa-eye"></i> Privacy Settings</a></li>
+							<li><a href="./login.html"><i class="fa fa-power-off"></i> Log Out</a></li>
 						</ul>
 					</li>
 					<!-- END USER LOGIN DROPDOWN -->
@@ -348,9 +349,9 @@
 		  <div id="teamslider">
 			  <ul class="team-list">
 				<li class="current">
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar3.jpg" alt="" />
+					  <img src="./img/avatars/avatar3.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					You
@@ -383,9 +384,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar1.jpg" alt="" />
+					  <img src="./img/avatars/avatar1.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Max Doe
@@ -418,9 +419,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar2.jpg" alt="" />
+					  <img src="./img/avatars/avatar2.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Jane Doe
@@ -453,9 +454,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar4.jpg" alt="" />
+					  <img src="./img/avatars/avatar4.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Ellie Doe
@@ -488,9 +489,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar5.jpg" alt="" />
+					  <img src="./img/avatars/avatar5.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Lisa Doe
@@ -523,9 +524,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar6.jpg" alt="" />
+					  <img src="./img/avatars/avatar6.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Kelly Doe
@@ -558,9 +559,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar7.jpg" alt="" />
+					  <img src="./img/avatars/avatar7.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Jessy Doe
@@ -593,9 +594,9 @@
 				  </a>
 				</li>
 				<li>
-				  <a href="javascript:void(0);">
+				  <a href="./javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar8.jpg" alt="" />
+					  <img src="./img/avatars/avatar8.jpg" alt="" />
 				  </span>
 				  <span class="title">
 					Debby Doe
@@ -633,7 +634,7 @@
 		<!-- /TEAM STATUS -->
 	</header>
 	<!--/HEADER -->
-	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+	<div class="copyrights">Collect from <a href="./http://www.cssmoban.com/" >企业网站模板</a></div>
 	<!-- PAGE -->
 	<section id="page">
 				<!-- SIDEBAR -->
@@ -653,86 +654,86 @@
 						<!-- SIDEBAR MENU -->
 						<ul>
 							<li class="active">
-								<a href="index.html">
+								<a href="./index.html">
 								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">Dashboard</span>
 								<span class="selected"></span>
 								</a>					
 							</li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-bookmark-o fa-fw"></i> <span class="menu-text">UI Features</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="elements.html"><span class="sub-menu-text">Elements</span></a></li><li><a class="" href="notifications.html"><span class="sub-menu-text">Hubspot Notifications</span></a></li>
-									<li><a class="" href="buttons_icons.html"><span class="sub-menu-text">Buttons & Icons</span></a></li>
-									<li><a class="" href="sliders_progress.html"><span class="sub-menu-text">Sliders & Progress</span></a></li>
-									<li><a class="" href="typography.html"><span class="sub-menu-text">Typography</span></a></li>
-									<li><a class="" href="tabs_accordions.html"><span class="sub-menu-text">Tabs & Accordions</span></a></li>
-									<li><a class="" href="treeview.html"><span class="sub-menu-text">Treeview</span></a></li>
-									<li><a class="" href="nestable_lists.html"><span class="sub-menu-text">Nestable Lists</span></a></li>
+									<li><a class="" href="./elements.html"><span class="sub-menu-text">Elements</span></a></li><li><a class="" href="./notifications.html"><span class="sub-menu-text">Hubspot Notifications</span></a></li>
+									<li><a class="" href="./buttons_icons.html"><span class="sub-menu-text">Buttons & Icons</span></a></li>
+									<li><a class="" href="./sliders_progress.html"><span class="sub-menu-text">Sliders & Progress</span></a></li>
+									<li><a class="" href="./typography.html"><span class="sub-menu-text">Typography</span></a></li>
+									<li><a class="" href="./tabs_accordions.html"><span class="sub-menu-text">Tabs & Accordions</span></a></li>
+									<li><a class="" href="./treeview.html"><span class="sub-menu-text">Treeview</span></a></li>
+									<li><a class="" href="./nestable_lists.html"><span class="sub-menu-text">Nestable Lists</span></a></li>
 									<li class="has-sub-sub">
-										<a href="javascript:;" class=""><span class="sub-menu-text">Third Level Menu</span>
+										<a href="./javascript:;" class=""><span class="sub-menu-text">Third Level Menu</span>
 										<span class="arrow"></span>
 										</a>
 										<ul class="sub-sub">
-											<li><a class="" href="#"><span class="sub-sub-menu-text">Item 1</span></a></li>
-											<li><a class="" href="#"><span class="sub-sub-menu-text">Item 2</span></a></li>
+											<li><a class="" href="./#"><span class="sub-sub-menu-text">Item 1</span></a></li>
+											<li><a class="" href="./#"><span class="sub-sub-menu-text">Item 2</span></a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<li><a class="" href="frontend_theme/index.html" target="_blank"><i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Frontend Theme</span></a></li><li><a class="" href="inbox.html"><i class="fa fa-envelope-o fa-fw"></i> <span class="menu-text">Inbox</span></a></li>
+							<li><a class="" href="./frontend_theme/index.html" target="_blank"><i class="fa fa-desktop fa-fw"></i> <span class="menu-text">Frontend Theme</span></a></li><li><a class="" href="./inbox.html"><i class="fa fa-envelope-o fa-fw"></i> <span class="menu-text">Inbox</span></a></li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-table fa-fw"></i> <span class="menu-text">Tables</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="simple_table.html"><span class="sub-menu-text">Simple Tables</span></a></li>
-									<li><a class="" href="dynamic_tables.html"><span class="sub-menu-text">Dynamic Tables</span></a></li>
-									<li><a class="" href="jqgrid_plugin.html"><span class="sub-menu-text">jqGrid Plugin</span></a></li>
+									<li><a class="" href="./simple_table.html"><span class="sub-menu-text">Simple Tables</span></a></li>
+									<li><a class="" href="./dynamic_tables.html"><span class="sub-menu-text">Dynamic Tables</span></a></li>
+									<li><a class="" href="./jqgrid_plugin.html"><span class="sub-menu-text">jqGrid Plugin</span></a></li>
 								</ul>
 							</li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-pencil-square-o fa-fw"></i> <span class="menu-text">Form Elements</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="forms.html"><span class="sub-menu-text">Forms</span></a></li>
-									<li><a class="" href="wizards_validations.html"><span class="sub-menu-text">Wizards & Validations</span></a></li>
-									<li><a class="" href="rich_text_editors.html"><span class="sub-menu-text">Rich Text Editors</span></a></li>
+									<li><a class="" href="./forms.html"><span class="sub-menu-text">Forms</span></a></li>
+									<li><a class="" href="./wizards_validations.html"><span class="sub-menu-text">Wizards & Validations</span></a></li>
+									<li><a class="" href="./rich_text_editors.html"><span class="sub-menu-text">Rich Text Editors</span></a></li>
 									
-									<li><a class="" href="dropzone_file_upload.html"><span class="sub-menu-text">Dropzone File Upload</span></a></li>
+									<li><a class="" href="./dropzone_file_upload.html"><span class="sub-menu-text">Dropzone File Upload</span></a></li>
 								</ul>
 							</li>
-							<li><a class="" href="widgets_box.html"><i class="fa fa-th-large fa-fw"></i> <span class="menu-text">Widgets & Box</span></a></li>
+							<li><a class="" href="./widgets_box.html"><i class="fa fa-th-large fa-fw"></i> <span class="menu-text">Widgets & Box</span></a></li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-bar-chart-o fa-fw"></i> <span class="menu-text">Visual Charts</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="flot_charts.html"><span class="sub-menu-text">Flot Charts</span></a></li>
-									<li><a class="" href="xcharts.html"><span class="sub-menu-text">xCharts</span></a></li>
+									<li><a class="" href="./flot_charts.html"><span class="sub-menu-text">Flot Charts</span></a></li>
+									<li><a class="" href="./xcharts.html"><span class="sub-menu-text">xCharts</span></a></li>
 									
-									<li><a class="" href="others.html"><span class="sub-menu-text">Others</span></a></li>
+									<li><a class="" href="./others.html"><span class="sub-menu-text">Others</span></a></li>
 								</ul>
 							</li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-columns fa-fw"></i> <span class="menu-text">Layouts</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="mini_sidebar.html"><span class="sub-menu-text">Mini Sidebar</span></a></li>
-									<li><a class="" href="fixed_header.html"><span class="sub-menu-text">Fixed Header</span></a></li>
+									<li><a class="" href="./mini_sidebar.html"><span class="sub-menu-text">Mini Sidebar</span></a></li>
+									<li><a class="" href="./fixed_header.html"><span class="sub-menu-text">Fixed Header</span></a></li>
 									
-									<li><a class="" href="fixed_header_sidebar.html"><span class="sub-menu-text">Fixed Header & Sidebar</span></a></li>
+									<li><a class="" href="./fixed_header_sidebar.html"><span class="sub-menu-text">Fixed Header & Sidebar</span></a></li>
 								</ul>
 							</li>
-							<li><a class="" href="calendar.html"><i class="fa fa-calendar fa-fw"></i> 
+							<li><a class="" href="./calendar.html"><i class="fa fa-calendar fa-fw"></i> 
 								<span class="menu-text">Calendar 
 									<span class="tooltip-error pull-right" title="" data-original-title="3 New Events">
 										<span class="label label-success">New</span>
@@ -741,47 +742,47 @@
 								</a>
 							</li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-map-marker fa-fw"></i> <span class="menu-text">Maps</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="google_maps.html"><span class="sub-menu-text">Google Maps</span></a></li>
-									<li><a class="" href="vector_maps.html"><span class="sub-menu-text">Vector Maps</span></a></li>
+									<li><a class="" href="./google_maps.html"><span class="sub-menu-text">Google Maps</span></a></li>
+									<li><a class="" href="./vector_maps.html"><span class="sub-menu-text">Vector Maps</span></a></li>
 								</ul>
 							</li>
-							<li><a class="" href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="menu-text">Gallery</span></a></li>
+							<li><a class="" href="./gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="menu-text">Gallery</span></a></li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-file-text fa-fw"></i> <span class="menu-text">More Pages</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="login.html"><span class="sub-menu-text">Login & Register Option 1</span></a></li><li><a class="" href="login_bg.html"><span class="sub-menu-text">Login & Register Option 2</span></a></li>
-									<li><a class="" href="user_profile.html"><span class="sub-menu-text">User profile</span></a></li>
+									<li><a class="" href="./login.html"><span class="sub-menu-text">Login & Register Option 1</span></a></li><li><a class="" href="./login_bg.html"><span class="sub-menu-text">Login & Register Option 2</span></a></li>
+									<li><a class="" href="./user_profile.html"><span class="sub-menu-text">User profile</span></a></li>
 									
-									<li><a class="" href="chats.html"><span class="sub-menu-text">Chats</span></a></li>
-									<li><a class="" href="todo_timeline.html"><span class="sub-menu-text">Todo & Timeline</span></a></li>
-									<li><a class="" href="address_book.html"><span class="sub-menu-text">Address Book</span></a></li>
+									<li><a class="" href="./chats.html"><span class="sub-menu-text">Chats</span></a></li>
+									<li><a class="" href="./todo_timeline.html"><span class="sub-menu-text">Todo & Timeline</span></a></li>
+									<li><a class="" href="./address_book.html"><span class="sub-menu-text">Address Book</span></a></li>
 									
-									<li><a class="" href="pricing.html"><span class="sub-menu-text">Pricing</span></a></li>
-									<li><a class="" href="invoice.html"><span class="sub-menu-text">Invoice</span></a></li>
-									<li><a class="" href="orders.html"><span class="sub-menu-text">Orders</span></a></li>
+									<li><a class="" href="./pricing.html"><span class="sub-menu-text">Pricing</span></a></li>
+									<li><a class="" href="./invoice.html"><span class="sub-menu-text">Invoice</span></a></li>
+									<li><a class="" href="./orders.html"><span class="sub-menu-text">Orders</span></a></li>
 								</ul>
 							</li>
 							<li class="has-sub">
-								<a href="javascript:;" class="">
+								<a href="./javascript:;" class="">
 								<i class="fa fa-briefcase fa-fw"></i> <span class="menu-text">Other Pages <span class="badge pull-right">9</span></span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
-									<li><a class="" href="search_results.html"><span class="sub-menu-text">Search Results</span></a></li>
-									<li><a class="" href="email_templates.html"><span class="sub-menu-text">Email Templates</span></a></li>
+									<li><a class="" href="./search_results.html"><span class="sub-menu-text">Search Results</span></a></li>
+									<li><a class="" href="./email_templates.html"><span class="sub-menu-text">Email Templates</span></a></li>
 									
-									<li><a class="" href="error_404.html"><span class="sub-menu-text">Error 404 Option 1</span></a></li><li><a class="" href="error_404_2.html"><span class="sub-menu-text">Error 404 Option 2</span></a></li><li><a class="" href="error_404_3.html"><span class="sub-menu-text">Error 404 Option 3</span></a></li>
-									<li><a class="" href="error_500.html"><span class="sub-menu-text">Error 500 Option 1</span></a></li><li><a class="" href="error_500_2.html"><span class="sub-menu-text">Error 500 Option 2</span></a></li>
-									<li><a class="" href="faq.html"><span class="sub-menu-text">FAQ</span></a></li>
-									<li><a class="" href="blank_page.html"><span class="sub-menu-text">Blank Page</span></a></li>
+									<li><a class="" href="./error_404.html"><span class="sub-menu-text">Error 404 Option 1</span></a></li><li><a class="" href="./error_404_2.html"><span class="sub-menu-text">Error 404 Option 2</span></a></li><li><a class="" href="./error_404_3.html"><span class="sub-menu-text">Error 404 Option 3</span></a></li>
+									<li><a class="" href="./error_500.html"><span class="sub-menu-text">Error 500 Option 1</span></a></li><li><a class="" href="./error_500_2.html"><span class="sub-menu-text">Error 500 Option 2</span></a></li>
+									<li><a class="" href="./faq.html"><span class="sub-menu-text">FAQ</span></a></li>
+									<li><a class="" href="./blank_page.html"><span class="sub-menu-text">Blank Page</span></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -823,7 +824,7 @@
 									<ul class="breadcrumb">
 										<li>
 											<i class="fa fa-home"></i>
-											<a href="index.html">Home</a>
+											<a href="./index.html">Home</a>
 										</li>
 										<li>Dashboard - shared on weidea.net</li>
 									</ul>
@@ -833,9 +834,9 @@
 										<!-- DATE RANGE PICKER -->
 										<span class="date-range pull-right">
 											<div class="btn-group">
-												<a class="js_update btn btn-default" href="#">Today</a>
-												<a class="js_update btn btn-default" href="#">Last 7 Days</a>
-												<a class="js_update btn btn-default hidden-xs" href="#">Last month</a>
+												<a class="js_update btn btn-default" href="./#">Today</a>
+												<a class="js_update btn btn-default" href="./#">Last 7 Days</a>
+												<a class="js_update btn btn-default hidden-xs" href="./#">Last month</a>
 												
 												<a id="reportrange" class="btn reportrange">
 													<i class="fa fa-calendar"></i>
@@ -897,19 +898,19 @@
 													<div id="dash_pie_1" class="piechart" data-percent="59">
 														<span class="percent"></span>
 													</div>
-													<a href="#" class="title">New Visitors <i class="fa fa-angle-right"></i></a>
+													<a href="./#" class="title">New Visitors <i class="fa fa-angle-right"></i></a>
 												</div>
 												<div class="col-md-4 text-center">
 													<div id="dash_pie_2" class="piechart" data-percent="73">
 														<span class="percent"></span>
 													</div>
-													<a href="#" class="title">Bounce Rate <i class="fa fa-angle-right"></i></a>
+													<a href="./#" class="title">Bounce Rate <i class="fa fa-angle-right"></i></a>
 												</div>
 												<div class="col-md-4 text-center">
 													<div id="dash_pie_3" class="piechart" data-percent="90">
 														<span class="percent"></span>
 													</div>
-													<a href="#" class="title">Brand Popularity <i class="fa fa-angle-right"></i></a>
+													<a href="./#" class="title">Brand Popularity <i class="fa fa-angle-right"></i></a>
 												</div>
 											</div>
 										</div>
@@ -927,16 +928,16 @@
 											<span class="label label-danger">
 												20% <i class="fa fa-arrow-up"></i>
 											</span>
-											<a href="#box-config" data-toggle="modal" class="config">
+											<a href="./#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
 											</a>
-											<a href="javascript:;" class="reload">
+											<a href="./javascript:;" class="reload">
 												<i class="fa fa-refresh"></i>
 											</a>
-											<a href="javascript:;" class="collapse">
+											<a href="./javascript:;" class="collapse">
 												<i class="fa fa-chevron-up"></i>
 											</a>
-											<a href="javascript:;" class="remove">
+											<a href="./javascript:;" class="remove">
 												<i class="fa fa-times"></i>
 											</a>
 										</div>
@@ -960,8 +961,8 @@
 									<div class="box-body">
 										<div class="tabbable header-tabs">
 											<ul class="nav nav-tabs">
-												 <li><a href="#box_tab2" data-toggle="tab"><i class="fa fa-search-plus"></i> <span class="hidden-inline-mobile">Select & Zoom Sales Chart</span></a></li>
-												 <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-bar-chart-o"></i> <span class="hidden-inline-mobile">Traffic Statistics</span></a></li>
+												 <li><a href="./#box_tab2" data-toggle="tab"><i class="fa fa-search-plus"></i> <span class="hidden-inline-mobile">Select & Zoom Sales Chart</span></a></li>
+												 <li class="active"><a href="./#box_tab1" data-toggle="tab"><i class="fa fa-bar-chart-o"></i> <span class="hidden-inline-mobile">Traffic Statistics</span></a></li>
 											 </ul>
 											 <div class="tab-content">
 												 <div class="tab-pane fade in active" id="box_tab1">
@@ -1011,8 +1012,8 @@
 									<div class="box-body">
 								<div class="tabbable header-tabs">
 									<ul class="nav nav-tabs">
-									   <li class="active"><a href="#sales" data-toggle="tab"><i class="fa fa-bookmark"></i> <span class="hidden-inline-mobile">New Orders</span></a></li>
-									   <li><a href="#feed" data-toggle="tab"><i class="fa fa-rss"></i> <span class="hidden-inline-mobile">Recent Activities</span></a></li>
+									   <li class="active"><a href="./#sales" data-toggle="tab"><i class="fa fa-bookmark"></i> <span class="hidden-inline-mobile">New Orders</span></a></li>
+									   <li><a href="./#feed" data-toggle="tab"><i class="fa fa-rss"></i> <span class="hidden-inline-mobile">Recent Activities</span></a></li>
 									</ul>
 									<div class="tab-content">
 									   <div class="tab-pane active" id="sales">
@@ -1250,10 +1251,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-check btn btn-info"></i>
-													<a class="user" href="#"> John Doe </a>
+													<a class="user" href="./#"> John Doe </a>
 													accepted your connection request.
 													<br>
-													<a href="#">View profile</a>
+													<a href="./#">View profile</a>
 													
 												</div>
 												<div class="time">
@@ -1264,10 +1265,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-picture-o btn btn-danger"></i>
-													<a class="user" href="#"> Jack Doe </a>
+													<a class="user" href="./#"> Jack Doe </a>
 													uploaded a new photo.
 													<br>
-													<a href="#">Take a look</a>
+													<a href="./#">Take a look</a>
 													
 												</div>
 												<div class="time">
@@ -1278,10 +1279,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-edit btn btn-pink"></i>
-													<a class="user" href="#"> Jess Doe </a>
+													<a class="user" href="./#"> Jess Doe </a>
 													edited their skills.
 													<br>
-													<a href="#">Endorse them</a>
+													<a href="./#">Endorse them</a>
 													
 												</div>
 												<div class="time">
@@ -1292,10 +1293,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-bitcoin btn btn-yellow"></i>
-													<a class="user" href="#"> Divine Doe </a>
+													<a class="user" href="./#"> Divine Doe </a>
 													made a bitcoin payment.
 													<br>
-													<a href="#">Check your financials</a>
+													<a href="./#">Check your financials</a>
 													
 												</div>
 												<div class="time">
@@ -1306,10 +1307,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-dropbox btn btn-primary"></i>
-													<a class="user" href="#"> Lisbon Doe </a>
+													<a class="user" href="./#"> Lisbon Doe </a>
 													saved a new document to Dropbox.
 													<br>
-													<a href="#">Download</a>
+													<a href="./#">Download</a>
 													
 												</div>
 												<div class="time">
@@ -1320,10 +1321,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-pinterest btn btn-inverse"></i>
-													<a class="user" href="#"> Bob Doe </a>
+													<a class="user" href="./#"> Bob Doe </a>
 													pinned a new photo to Pinterest.
 													<br>
-													<a href="#">Take a look</a>
+													<a href="./#">Take a look</a>
 													
 												</div>
 												<div class="time">
@@ -1334,10 +1335,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-clock-o btn btn-success"></i>
-													<a class="user" href="#"> John Doe </a>
+													<a class="user" href="./#"> John Doe </a>
 													accepted your connection request.
 													<br>
-													<a href="#">View profile</a>
+													<a href="./#">View profile</a>
 													
 												</div>
 												<div class="time">
@@ -1348,10 +1349,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-heart btn btn-purple"></i>
-													<a class="user" href="#"> Jack Doe </a>
+													<a class="user" href="./#"> Jack Doe </a>
 													uploaded a new photo.
 													<br>
-													<a href="#">Take a look</a>
+													<a href="./#">Take a look</a>
 													
 												</div>
 												<div class="time">
@@ -1362,10 +1363,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-gift btn btn-pink"></i>
-													<a class="user" href="#"> Jess Doe </a>
+													<a class="user" href="./#"> Jess Doe </a>
 													edited their skills.
 													<br>
-													<a href="#">Endorse them</a>
+													<a href="./#">Endorse them</a>
 													
 												</div>
 												<div class="time">
@@ -1376,10 +1377,10 @@
 											  <div class="feed-activity clearfix">
 												<div>
 													<i class="pull-left roundicon fa fa-random btn btn-yellow"></i>
-													<a class="user" href="#"> Divine Doe </a>
+													<a class="user" href="./#"> Divine Doe </a>
 													made a bitcoin payment.
 													<br>
-													<a href="#">Check your financials</a>
+													<a href="./#">Check your financials</a>
 													
 												</div>
 												<div class="time">
@@ -1403,10 +1404,10 @@
 											<div class="box-title">
 												<h4><i class="fa fa-money"></i>Sales Summary</h4>
 												<div class="tools">												
-													<a href="javascript:;" class="reload">
+													<a href="./javascript:;" class="reload">
 														<i class="fa fa-refresh"></i>
 													</a>
-													<a href="javascript:;" class="remove">
+													<a href="./javascript:;" class="remove">
 														<i class="fa fa-times"></i>
 													</a>
 												</div>
@@ -1435,10 +1436,10 @@
 											<div class="box-title">
 												<h4><i class="fa fa-adjust"></i>Distribution Index</h4>
 												<div class="tools">
-													<a href="javascript:;" class="reload">
+													<a href="./javascript:;" class="reload">
 														<i class="fa fa-refresh"></i>
 													</a>
-													<a href="javascript:;" class="remove">
+													<a href="./javascript:;" class="remove">
 														<i class="fa fa-times"></i>
 													</a>
 												</div>
@@ -1479,37 +1480,37 @@
 										 </thead>
 										 <tbody>
 											<tr>
-											   <td><a href="#">Fortune 500</a></td>
+											   <td><a href="./#">Fortune 500</a></td>
 											   <td class="hidden-xs">Gold Level Virtual Server</td>
 											   <td>$ 2310.23</td>
 											   <td><span class="label label-success label-sm">Paid</span></td>
 											</tr>
 											<tr>
-											   <td><a href="#">Cisco Inc.</a></td>
+											   <td><a href="./#">Cisco Inc.</a></td>
 											   <td class="hidden-xs">Platinum Level Virtual Server</td>
 											   <td>$ 5502.67</td>
 											   <td><span class="label label-warning label-sm">Pending</span></td>
 											</tr>
 											<tr>
-											   <td><a href="#">VMWare Ltd.</a></td>
+											   <td><a href="./#">VMWare Ltd.</a></td>
 											   <td class="hidden-xs">Hardware Switch</td>
 											   <td>$ 3472.54</td>
 											   <td><span class="label label-success label-sm">Paid</span></td>
 											</tr>
 											<tr>
-											   <td><a href="#">Wall-Mart Stores</a></td>
+											   <td><a href="./#">Wall-Mart Stores</a></td>
 											   <td class="hidden-xs">Branding & Marketing</td>
 											   <td>$ 6653.25</td>
 											   <td><span class="label label-success label-sm">Paid</span></td>
 											</tr>
 											<tr>
-											   <td><a href="#">Exxon Mobil</a></td>
+											   <td><a href="./#">Exxon Mobil</a></td>
 											   <td class="hidden-xs">UX and UI Services</td>
 											   <td>$ 45645.45</td>
 											   <td><span class="label label-danger label-sm">Overdue</span></td>
 											</tr>
 											<tr>
-											   <td><a href="#">General Electric</a></td>
+											   <td><a href="./#">General Electric</a></td>
 											   <td class="hidden-xs">Web Designing</td>
 											   <td>$ 3432.11</td>
 											   <td><span class="label label-warning label-sm">Pending</span></td>
@@ -1529,16 +1530,16 @@
 									<div class="box-title">
 										<h4><i class="fa fa-calendar"></i>Calendar</h4>
 										<div class="tools">
-											<a href="#box-config" data-toggle="modal" class="config">
+											<a href="./#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
 											</a>
-											<a href="javascript:;" class="reload">
+											<a href="./javascript:;" class="reload">
 												<i class="fa fa-refresh"></i>
 											</a>
-											<a href="javascript:;" class="collapse">
+											<a href="./javascript:;" class="collapse">
 												<i class="fa fa-chevron-up"></i>
 											</a>
-											<a href="javascript:;" class="remove">
+											<a href="./javascript:;" class="remove">
 												<i class="fa fa-times"></i>
 											</a>
 										</div>
@@ -1556,16 +1557,16 @@
 									<div class="box-title">
 										<h4><i class="fa fa-comments"></i>Chat Window</h4>
 										<div class="tools">
-											<a href="#box-config" data-toggle="modal" class="config">
+											<a href="./#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
 											</a>
-											<a href="javascript:;" class="reload">
+											<a href="./javascript:;" class="reload">
 												<i class="fa fa-refresh"></i>
 											</a>
-											<a href="javascript:;" class="collapse">
+											<a href="./javascript:;" class="collapse">
 												<i class="fa fa-chevron-up"></i>
 											</a>
-											<a href="javascript:;" class="remove">
+											<a href="./javascript:;" class="remove">
 												<i class="fa fa-times"></i>
 											</a>
 										</div>
@@ -1574,8 +1575,8 @@
 										<div class="scroller" data-height="402px" data-always-visible="1" data-rail-visible="1">
 											<ul class="media-list chat-list">
 												<li class="media">
-												  <a class="pull-left" href="#">
-													<img class="media-object" alt="Generic placeholder image" src="img/chat/headshot1.jpg">
+												  <a class="pull-left" href="./#">
+													<img class="media-object" alt="Generic placeholder image" src="./img/chat/headshot1.jpg">
 												  </a>
 												  <div class="media-body chat-pop">
 													<h4 class="media-heading">John Doe <span class="pull-right"><i class="fa fa-clock-o"></i> <abbr class="timeago" title="Oct 9, 2013" >Oct 9, 2013</abbr> </span></h4>
@@ -1584,8 +1585,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-right" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot2.jpg">
+												  <a class="pull-right" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot2.jpg">
 												  </a>
 												  <div class="pull-right media-body chat-pop mod">
 													<h4 class="media-heading">You <span class="pull-left"><abbr class="timeago" title="Oct 10, 2013" >Oct 10, 2013</abbr> <i class="fa fa-clock-o"></i></span></h4></h4>
@@ -1593,8 +1594,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-left" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot3.jpg">
+												  <a class="pull-left" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot3.jpg">
 												  </a>
 												  <div class="media-body chat-pop">
 													<h4 class="media-heading">Tim Row <span class="pull-right"><i class="fa fa-clock-o"></i> <abbr class="timeago" title="Oct 10, 2013" >Oct 10, 2013</abbr> </span></h4></h4>
@@ -1602,8 +1603,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-left" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot5.jpg">
+												  <a class="pull-left" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot5.jpg">
 												  </a>
 												  <div class="media-body chat-pop">
 													<h4 class="media-heading">Jenny Doe <span class="pull-right"><i class="fa fa-clock-o"></i> <abbr class="timeago" title="Oct 10, 2013" >Oct 10, 2013</abbr> </span></h4></h4>
@@ -1611,8 +1612,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-right" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot2.jpg">
+												  <a class="pull-right" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot2.jpg">
 												  </a>
 												  <div class="pull-right media-body chat-pop mod">
 													<h4 class="media-heading">You <span class="pull-left"><abbr class="timeago" title="Oct 11, 2013" >Oct 11, 2013</abbr> <i class="fa fa-clock-o"></i></span></h4></h4>
@@ -1620,8 +1621,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-left" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot4.jpg">
+												  <a class="pull-left" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot4.jpg">
 												  </a>
 												  <div class="media-body chat-pop">
 													<h4 class="media-heading">Jess Doe <span class="pull-right"><i class="fa fa-clock-o"></i> <abbr class="timeago" title="Oct 12, 2013" >Oct 12, 2013</abbr> </span></h4></h4>
@@ -1629,8 +1630,8 @@
 												  </div>
 												</li>
 												<li class="media">
-												  <a class="pull-right" href="#">
-													<img class="media-object"  alt="Generic placeholder image" src="img/chat/headshot2.jpg">
+												  <a class="pull-right" href="./#">
+													<img class="media-object"  alt="Generic placeholder image" src="./img/chat/headshot2.jpg">
 												  </a>
 												  <div class="pull-right media-body chat-pop mod">
 													<h4 class="media-heading">You <span class="pull-left"><abbr class="timeago" title="Oct 12, 2013" >Oct 12, 2013</abbr> <i class="fa fa-clock-o"></i></span></h4></h4>
@@ -1663,52 +1664,53 @@
 			</div>
 		</div>
 	</section>
+	</form>
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<!-- JQUERY -->
-	<script src="js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="./js/jquery/jquery-2.0.3.min.js"></script>
 	<!-- JQUERY UI-->
-	<script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="./js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<script src="bootstrap-dist/js/bootstrap.min.js"></script>
+	<script src="./bootstrap-dist/js/bootstrap.min.js"></script>
 	
 		
 	<!-- DATE RANGE PICKER -->
-	<script src="js/bootstrap-daterangepicker/moment.min.js"></script>
+	<script src="./js/bootstrap-daterangepicker/moment.min.js"></script>
 	
-	<script src="js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<script src="./js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="./js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
-	<script type="text/javascript" src="js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
 	<!-- SPARKLINES -->
-	<script type="text/javascript" src="js/sparklines/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="./js/sparklines/jquery.sparkline.min.js"></script>
 	<!-- EASY PIE CHART -->
-	<script src="js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="js/easypiechart/jquery.easypiechart.min.js"></script>
+	<script src="./js/jquery-easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="./js/easypiechart/jquery.easypiechart.min.js"></script>
 	<!-- FLOT CHARTS -->
-	<script src="js/flot/jquery.flot.min.js"></script>
-	<script src="js/flot/jquery.flot.time.min.js"></script>
-    <script src="js/flot/jquery.flot.selection.min.js"></script>
-	<script src="js/flot/jquery.flot.resize.min.js"></script>
-    <script src="js/flot/jquery.flot.pie.min.js"></script>
-    <script src="js/flot/jquery.flot.stack.min.js"></script>
-    <script src="js/flot/jquery.flot.crosshair.min.js"></script>
+	<script src="./js/flot/jquery.flot.min.js"></script>
+	<script src="./js/flot/jquery.flot.time.min.js"></script>
+    <script src="./js/flot/jquery.flot.selection.min.js"></script>
+	<script src="./js/flot/jquery.flot.resize.min.js"></script>
+    <script src="./js/flot/jquery.flot.pie.min.js"></script>
+    <script src="./js/flot/jquery.flot.stack.min.js"></script>
+    <script src="./js/flot/jquery.flot.crosshair.min.js"></script>
 	<!-- TODO -->
-	<script type="text/javascript" src="js/jquery-todo/js/paddystodolist.js"></script>
+	<script type="text/javascript" src="./js/jquery-todo/js/paddystodolist.js"></script>
 	<!-- TIMEAGO -->
-	<script type="text/javascript" src="js/timeago/jquery.timeago.min.js"></script>
+	<script type="text/javascript" src="./js/timeago/jquery.timeago.min.js"></script>
 	<!-- FULL CALENDAR -->
-	<script type="text/javascript" src="js/fullcalendar/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="./js/fullcalendar/fullcalendar.min.js"></script>
 	<!-- COOKIE -->
-	<script type="text/javascript" src="js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- GRITTER -->
-	<script type="text/javascript" src="js/gritter/js/jquery.gritter.min.js"></script>
+	<script type="text/javascript" src="./js/gritter/js/jquery.gritter.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
-	<script src="js/script.js"></script>
+	<script src="./js/script.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("index");  //Set current page

@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String insertUser(User user) {
+    public Integer insertUser(User user) {
         return userMapper.insertUser(user);
     }
 }

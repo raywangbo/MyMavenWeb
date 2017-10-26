@@ -15,7 +15,7 @@ public class User {
     private String role;            //用户角色
     private Timestamp createTime; //用户创造时间
     private Timestamp lastLoginTime;   //用户最后登录时间
-    private Long status;            //用户状态
+    private String status;            //用户状态
 
     public String getFullName() {
         return fullName;
@@ -81,11 +81,11 @@ public class User {
         this.lastLoginTime = lastLoginTime;
     }
 
-    public Long getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Long status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

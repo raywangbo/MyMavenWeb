@@ -73,7 +73,7 @@
 	</bean>
   
 	<bean id="ViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
-        <property name="prefix" value="/WEB-INF/view/"></property>
+        <property name="prefix" value="/"></property>
         <property name="suffix" value=".html"></property>
     </bean>  
 	

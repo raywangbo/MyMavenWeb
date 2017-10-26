@@ -14,7 +14,6 @@ import javax.annotation.Resource;
  */
 
 @Controller
-@ResponseBody
 @RequestMapping(value = "login")
 public class UserLoginController {
 
@@ -36,10 +35,10 @@ public class UserLoginController {
             user.setPswd(pswd);
             if (userService.userLogin(user) == 1) {
 //                modelAndView.setViewName("index")
-                return user.toString();
+                return "index";
             } else {
 //                modelAndView.setViewName("login");
-                return "登录失败";
+                return "-1";
             }
         }
         return null;
@@ -57,10 +56,9 @@ public class UserLoginController {
             user.setName(userName);
             user.setAccount(userAccount);
             user.setPswd(pswd);
-            user.setStatus(1l);
-
-           return userService.insertUser(user);
+            user.setStatus("1");
+           return "index";
         }
-        return "";
+        return "-1";
     }
 }
