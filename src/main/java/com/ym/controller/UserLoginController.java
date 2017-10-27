@@ -6,15 +6,14 @@ import com.ym.service.UserService;
 import com.ym.utils.MD5Util;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 /**
  * Created by Ray on 2017/10/23.
+ * 响应用户登录及注册动作
  */
 
 @Controller
@@ -31,11 +30,12 @@ public class UserLoginController {
      * @return
      */
     @RequestMapping(value = "/userLogin")
-    public void userLogin(HttpServletResponse response, HttpServletRequest request, String account , String pswd) throws Exception {
+    public void userLogin(HttpServletResponse response, HttpServletRequest request, String account , String pswd, String rememberMe) throws Exception {
         if (account != null) {
             User user;
             user = userService.findUserByAccount(account);
             if (MD5Util.verify(pswd,user.getPswd())) {
+                System.out.println("["+rememberMe+"]");
                 response.sendRedirect("/index.html");
                 //request.getRequestDispatcher("login/index.html").forward(request,response);
             }

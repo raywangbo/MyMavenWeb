@@ -1,4 +1,5 @@
 import org.junit.Test;
+import redis.clients.jedis.Jedis;
 
 /**
  * Created by Ray on 2017/10/23.
@@ -6,8 +7,9 @@ import org.junit.Test;
 public class test {
 
    @Test
-    public void testMybatis(){
-        System.out.println("admin");
+    public void testRedis(){
+       String a = "";
+       System.out.println(!a.equals(null));
     }
 
 }
