@@ -15,6 +15,8 @@ public class UserRealm extends AuthorizingRealm{
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+        String account = (String)principalCollection.getPrimaryPrincipal();
+
         return null;
     }
 

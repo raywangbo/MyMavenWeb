@@ -2,6 +2,9 @@ package com.ym.shiro.token;
 
 import com.ym.pojo.User;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.ExcessiveAttemptsException;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.SimplePrincipalCollection;
 
@@ -69,9 +72,14 @@ public class TokenManager {
      * @return
      */
     public static User login(User user, String rememberMe){
+        String error = null;
         ShiroToken shiroToken = new ShiroToken(user.getAccount(),user.getPswd());
-        shiroToken.setRememberMe(!rememberMe.equals(null));
-        SecurityUtils.getSubject().login(shiroToken);
+        shiroToken.setRememberMe(!rememberMe.equals(null));//记住我
+        try{
+            SecurityUtils.getSubject().login(shiroToken);
+        }catch (UnknownAccountException | IncorrectCredentialsException e1){
+            error="用户名或密码错误";
+        }
         return getToken();
     }
 

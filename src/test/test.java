@@ -1,3 +1,4 @@
+import com.ym.shiro.cache.JedisManager;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
@@ -8,8 +9,8 @@ public class test {
 
    @Test
     public void testRedis(){
-       String a = "";
-       System.out.println(!a.equals(null));
+       JedisManager jedisManager = new JedisManager();
+       System.out.println(jedisManager.getJedis());
     }
 
 }

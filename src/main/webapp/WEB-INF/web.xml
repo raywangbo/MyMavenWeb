@@ -22,24 +22,25 @@
 		<param-value>
             classpath:spring-mvc.xml,
             classpath:applicationContext-Persist.xml,
-            classpath:applicationContext-Service.xml
+            classpath:applicationContext-Service.xml,
+			classpath:spring-cache.xml
         </param-value>
 	</context-param>
 
 
 	<!--shiro核心拦截器-->
-	<!--<filter>-->
-		<!--<filter-name>shiroFilter</filter-name>-->
-		<!--<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>-->
-	<!--</filter>-->
-	<!--<filter-mapping>-->
-		<!--<filter-name>shiroFilter</filter-name>-->
-		<!--<url-pattern>*.shtml</url-pattern>-->
-	<!--</filter-mapping>-->
-	<!--<filter-mapping>-->
-		<!--<filter-name>shiroFilter</filter-name>-->
-		<!--<url-pattern>*.html</url-pattern>-->
-	<!--</filter-mapping>-->
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
 
 	<listener>
 		<description>spring监听器</description>

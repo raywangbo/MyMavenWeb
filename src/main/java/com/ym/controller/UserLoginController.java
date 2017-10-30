@@ -36,6 +36,7 @@ public class UserLoginController {
             user = userService.findUserByAccount(account);
             if (MD5Util.verify(pswd,user.getPswd())) {
                 System.out.println("["+rememberMe+"]");
+                System.out.println();
                 response.sendRedirect("/index.html");
                 //request.getRequestDispatcher("login/index.html").forward(request,response);
             }

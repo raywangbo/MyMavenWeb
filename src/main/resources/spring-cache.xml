@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+    		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
+       default-lazy-init="false">
+    <!--加载Redis配置文件-->
+    <context:property-placeholder location="classpath:redis.properties"/>
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- 最大闲置 -->
+        <property name="maxIdle">
+            <value>${redis.maxIdle}</value>
+        </property>
+        <!-- 最小闲置 -->
+        <property name="minIdle">
+            <value>${redis.minIdle}</value>
+        </property>
+        <!-- 可以获取 -->
+        <property name="testOnBorrow">
+            <value>${redis.testOnBorrow}</value>
+        </property>
+    </bean>
+
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+        <constructor-arg index="2" name="port" type="int">
+            <value>${redis.port}</value>
+        </constructor-arg>
+        <constructor-arg index="3" name="timeout" type="int">
+            <value>${redis.timeout}</value>
+        </constructor-arg>
+        <constructor-arg index="1" name="host" type="java.lang.String">
+            <value>${redis.host}</value>
+        </constructor-arg>
+    </bean>
+</beans>
