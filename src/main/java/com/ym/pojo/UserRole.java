@@ -12,9 +12,8 @@ import java.util.List;
  */
 public class UserRole implements Serializable {
     private Long id;        //角色ID
+    private String code;
     private String name;    //角色名称
-    private String type;    //角色类型
-    private List<UserPermission> permissions = new LinkedList<>();//权限集合
 
     public Long getId() {
         return id;
@@ -32,29 +31,21 @@ public class UserRole implements Serializable {
         this.name = name;
     }
 
-    public String getType() {
-        return type;
+
+    public String getCode() {
+        return code;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public List<UserPermission> getPermissions() {
-        return permissions;
-    }
-
-    public void setPermissions(List<UserPermission> permissions) {
-        this.permissions = permissions;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     @Override
     public String toString() {
         return "UserRole{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", type='" + type + '\'' +
-                ", permissions=" + permissions +
+                ", code='" + code + '\'' +
+                ", name='" + name +
                 '}';
     }
 }

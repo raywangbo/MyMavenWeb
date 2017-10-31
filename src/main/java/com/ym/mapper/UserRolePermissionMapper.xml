@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ym.mapper.UserMapper" >
-    <resultMap id="userMap" type="com.ym.pojo.User">
-        <id column="id" property="id"/>
-        <result column="account" property="account"/>
-        <result column="name" property="name"/>
-        <result column="full_name" property="fullName"/>
-        <result column="pswd" property="pswd"/>
-        <result column="role" property="role"/>
-        <result column="create_time" property="createTime"/>
-        <result column="last_login_time" property="lastLoginTime"/>
-        <result column="status" property="status"/>
+<mapper namespace="com.ym.mapper.UserRolePermissionMapper" >
+    <resultMap id="urpMap" type="com.ym.pojo.UserRolePermission">
+        <result column="role_id" property="rId"/>
+        <result column="permission_id" property="pId"/>
     </resultMap>
+
+    <insert id="insertRP" parameterType="com.ym.pojo.UserRolePermission">
+        insert into u_role_permission VALUES (#{rId},#{pId})
+    </insert>
+
+    <select id="findRolePermissionByPid" parameterType="Long" resultMap="urpMap">
+        select * from u_role_permission where permission_id=#{pID}
+    </select>
+
+    <select id="findRolePermissionByRid" parameterType="Long" resultMap="urpMap">
+        select * from u_role_permission where role_id=#{rID}
+    </select>
+
+    <select id="findRP" parameterType="com.ym.pojo.UserRolePermission" resultMap="urpMap">
+        select * from u_role_permission where role_id=#{rId} and permission_id=#{pId}
+    </select>
+
+    <delete id="deleteByPid" parameterType="Long">
+        delete from u_role_permission where permission_id=#{pID}
+    </delete>
+
+    <delete id="deleteByRid" parameterType="Long">
+        delete from u_role_permission where role_id=#{rID}
+    </delete>
+
+    <delete id="deleteRP" parameterType="com.ym.pojo.UserRolePermission">
+        delete from u_role_permission where role_id=#{rId} and permission_id=#{pId}
+    </delete>
 </mapper>
