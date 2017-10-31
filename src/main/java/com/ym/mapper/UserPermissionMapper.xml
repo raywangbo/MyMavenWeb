@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ym.mapper.UserMapper" >
+    <delete id="deleteByKey" parameterType="Long">
+        delete from u_permission where id = #{id}
+    </delete>
+    <insert id="insertPermission" parameterType="com.ym.pojo.UserPermission">
+        insert into u_permission values(null,#{url},#{name})
+    </insert>
+    <select id="selectPermisionByKey" parameterType="Long" resultType="com.ym.pojo.UserPermission">
+        select * from u_permission where id = #{id}
+    </select>
+    <update id="updateByKeySelective" parameterType="com.ym.pojo.UserPermission">
+        update u_permission set url=#{url},name=#{name} where id=#{id}
+    </update>
+    <update id="updateByKey" parameterType="com.ym.pojo.UserPermission">
+        update u_permission set url=#{url},name=#{name} where id=#{id}
+    </update>
+    <select id="findPermissionByUserId" resultType="">
+
+    </select>
+</mapper>

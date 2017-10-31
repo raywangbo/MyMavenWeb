@@ -129,7 +129,6 @@ public class JedisManager {
                 sessions.add(SerializeUtil.deserialize(ele, Session.class));
             }
         }
-
         return sessions;
     }
 }

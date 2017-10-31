@@ -13,4 +13,5 @@ public interface UserService {
     User findUserByAccount(String account);//通过账户查找用户
 
     Integer insertUser(User user);//新增用户信息
+
 }

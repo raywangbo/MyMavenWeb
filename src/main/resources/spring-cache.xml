@@ -12,33 +12,21 @@
 			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
        default-lazy-init="false">
     <!--加载Redis配置文件-->
-    <context:property-placeholder location="classpath:redis.properties"/>
+    <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true" />
 
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <!-- 最大闲置 -->
-        <property name="maxIdle">
-            <value>${redis.maxIdle}</value>
-        </property>
+        <property name="maxIdle" value="${redis.maxIdle}" />
         <!-- 最小闲置 -->
-        <property name="minIdle">
-            <value>${redis.minIdle}</value>
-        </property>
+        <property name="minIdle" value="${redis.minIdle}" />
         <!-- 可以获取 -->
-        <property name="testOnBorrow">
-            <value>${redis.testOnBorrow}</value>
-        </property>
+        <property name="testOnBorrow" value="${redis.testOnBorrow}"/>
     </bean>
 
     <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
         <constructor-arg index="0" ref="jedisPoolConfig"/>
-        <constructor-arg index="2" name="port" type="int">
-            <value>${redis.port}</value>
-        </constructor-arg>
-        <constructor-arg index="3" name="timeout" type="int">
-            <value>${redis.timeout}</value>
-        </constructor-arg>
-        <constructor-arg index="1" name="host" type="java.lang.String">
-            <value>${redis.host}</value>
-        </constructor-arg>
+        <constructor-arg index="2" name="port" type="int" value="${redis.port}"/>
+        <constructor-arg index="3" name="timeout" type="int" value="${redis.timeout}" />
+        <constructor-arg index="1" name="host" type="java.lang.String" value="${redis.host}" />
     </bean>
 </beans>

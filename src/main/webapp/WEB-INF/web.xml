@@ -23,7 +23,8 @@
             classpath:spring-mvc.xml,
             classpath:applicationContext-Persist.xml,
             classpath:applicationContext-Service.xml,
-			classpath:spring-cache.xml
+			classpath:spring-cache.xml,
+			classpath:spring-shiro.xml
         </param-value>
 	</context-param>
 
@@ -35,11 +36,7 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>shiroFilter</filter-name>
-		<url-pattern>*.html</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>shiroFilter</filter-name>
-		<url-pattern>*.html</url-pattern>
+		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
 	<listener>
